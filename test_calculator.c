@@ -8,6 +8,7 @@ void test_add() {
     assert(add(0, 2.0) == 2.0);
     assert(add(2.0, 0) == 2.0);
     assert(add(-4, 2.0) == -2.0);
+    assert(add(-4, 2.0) == -2.0);
 }
 
 void test_subtract() {

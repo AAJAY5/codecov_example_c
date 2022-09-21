@@ -8,8 +8,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Compile calculator
         run: gcc -fprofile-arcs -ftest-coverage -O0 -o test_calculator test_calculator.c calculator.c
-#       - name: Run tests
-#         run: ./test_calculator
+      - name: Run tests
+        run: ./test_calculator
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
         with:
